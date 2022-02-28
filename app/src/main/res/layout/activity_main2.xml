@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinator_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test 1"
+            style="@style/HeaderText"
+            />
+
+        <TextView
+            android:id="@+id/tv_counttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Count: 0"
+            android:textSize="24dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+            <Button
+                android:id="@+id/substract_btn"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:text="-"/>
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/onclick_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Me"
+            android:layout_marginTop="24dp"
+            />
+
+        <Button
+            android:id="@+id/touch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Touch Me"
+            android:layout_marginTop="24dp"
+            />
+        <Button
+            android:id="@+id/snackbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Snackbar"
+            android:layout_marginTop="24dp"
+            />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
